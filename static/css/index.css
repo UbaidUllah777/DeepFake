@@ -1,0 +1,255 @@
+:root {
+    --primary: #2991c5;
+    --primary-hover: #2991c5;
+    --secondary: #f8f9fa;
+    --bg: #f8f9fa;
+    --text: #212529;
+    --white: #ffffff;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background: url("../static/images/hero-bg.jpg") no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.how-it-works .steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.step {
+    background: var(--white);
+    box-shadow: 0 4px 6px var(--card-shadow);
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.step span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.why-choose-us .feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--card-bg);
+    box-shadow: 0 4px 6px var(--card-shadow);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+/* 📊 Statistics Section */
+.statistics {
+    background: var(--primary);
+    color: white;
+    padding: 10vw 5vw;
+    
+}
+
+.statistics h2 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.statistics p {
+    font-size: 2rem;
+}
+
+/* 🎥 Real vs. Fake Gallery */
+.gallery .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--card-shadow);
+}
+
+/* 🔬 AI Technology */
+.ai-tech {
+    background: var(--secondary);
+    padding: 50px 20px;
+}
+
+/* 💡 Deepfake Tips */
+.tips ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tips li {
+    background: var(--white);
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px var(--card-shadow);
+    max-width: 600px;
+}
+
+/* 📰 News Section */
+.news {
+    background: var(--white);
+    box-shadow: 0 4px 6px var(--card-shadow);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* 🎯 Testimonials */
+.testimonials .testimonial {
+    background: var(--white);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px var(--card-shadow);
+    margin: 10px auto;
+    width: 80%;
+    font-style: italic;
+}
+
+/* 📞 Contact */
+.contact {
+    background: var(--bg);
+    padding: 50px 20px;
+}
+
+.contact .btn-secondary {
+    background: var(--primary-hover);
+    color: white;
+}
+
+.contact .btn-secondary:hover {
+    background: var(--primary);
+}
+
+/* 🚀 CTA Section */
+.cta {
+    background: var(--primary);
+    color: white;
+    padding: 40px;
+}
+
+.cta a {
+    background: white;
+    color: var(--primary);
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta a:hover {
+    background: var(--primary-hover);
+    color: white;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .how-it-works .steps,
+    .why-choose-us .feature-cards {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    .card {
+        width: 90%;
+        margin: auto;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+
+    .cta a {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+

@@ -1,0 +1,122 @@
+<link rel="stylesheet" href="../static/css/index.css">
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid" style="padding-right: 0px !important; padding-left: 0px !important;">
+    <section class="about-hero">
+        <h1>AI-Powered Deepfake Detection</h1>
+        <p>Detect fake images and videos instantly with cutting-edge AI.</p>
+        
+        <!-- HTML !-->
+<a href="/deepfake-checker" role="button" class="btn button-30 pt-2 px-5">Check Now</a>
+
+
+    </section>
+</div>
+
+
+<!-- 🔍 How It Works -->
+<section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+        <div class="step">
+            <span>1</span>
+            <p>Upload your image or video</p>
+        </div>
+        <div class="step">
+            <span>2</span>
+            <p>AI scans for deepfake patterns</p>
+        </div>
+        <div class="step">
+            <span>3</span>
+            <p>Receive instant authenticity results</p>
+        </div>
+    </div>
+</section>
+
+<!-- 🏆 Why Choose Us? -->
+<section class="why-choose-us">
+    <h2>Why Choose Our Deepfake Detector?</h2>
+    <div class="feature-cards">
+        <div class="card">
+            <h3>AI-Powered Accuracy</h3>
+            <p>Uses advanced deep learning models for reliable detection.</p>
+        </div>
+        <div class="card">
+            <h3>Fast & Secure</h3>
+            <p>Analyze files in seconds while keeping your data private.</p>
+        </div>
+        <div class="card">
+            <h3>Easy to Use</h3>
+            <p>Upload your file and get results instantly.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 📊 Live Deepfake Statistics -->
+<section class="statistics">
+    <h2>Deepfake Detection Stats</h2>
+    <p>Over <strong>50,000+</strong> images and videos analyzed!</p>
+</section>
+
+<!-- 🎥 Real vs. Fake Gallery -->
+<section class="gallery">
+    <h2>Real vs. Deepfake</h2>
+    <div class="image-grid">
+        <img src="{{ url_for('static', filename='images/real2.png') }}" alt="Real Image">
+        <img src="{{ url_for('static', filename='images/fake2.png') }}" alt="Deepfake Image">
+        <img src="{{ url_for('static', filename='images/real.png') }}" alt="Real Image">
+        <img src="{{ url_for('static', filename='images/fake.png') }}" alt="Deepfake Image">
+    </div>
+</section>
+
+<!-- 🔬 AI Technology Behind the Scenes -->
+<section class="ai-tech">
+    <h2>Our AI Technology</h2>
+    <p>We use state-of-the-art deep learning algorithms to analyze media for deepfake detection.</p>
+</section>
+
+<!-- 💡 Tips to Spot Deepfakes -->
+<section class="tips">
+    <h2>Tips to Spot Deepfakes</h2>
+    <ul>
+        <li>Check for unnatural facial movements.</li>
+        <li>Look for inconsistencies in lighting and shadows.</li>
+        <li>Listen for robotic or altered voices.</li>
+        <li>Use AI-powered tools like ours for verification.</li>
+    </ul>
+</section>
+
+<!-- 📰 Latest News on Deepfakes -->
+<section class="news">
+    <h2>Deepfake News & Updates</h2>
+    <p>Stay updated on the latest developments in deepfake detection.</p>
+</section>
+
+<!-- 🎯 User Testimonials -->
+<section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial">
+        <p>"This tool saved my company from a deepfake scam!" - Alex P.</p>
+    </div>
+    <div class="testimonial">
+        <p>"Incredible accuracy, and very easy to use!" - Sarah L.</p>
+    </div>
+</section>
+
+<!-- 📞 Contact Us -->
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach out to our support team!</p>
+    <a href="/contact" role="button" class="btn button-30 pt-2 px-5">Get in Touch</a>
+
+</section>
+
+<!-- 🚀 CTA Section -->
+<section class="statistics">
+    <h2>Try Deepfake Detector Now!</h2>
+    <a href="/deepfake-checker" role="button" class="btn button-30 pt-2 px-5">Start Analysis</a>
+
+</section>
+
+{% endblock %}
