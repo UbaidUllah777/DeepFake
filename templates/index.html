@@ -2,17 +2,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container-fluid" style="padding-right: 0px !important; padding-left: 0px !important;">
-    <section class="about-hero">
+<div class="container-fluid" style="padding: 0 !important; position: relative; overflow: hidden;">
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline id="bg-video" style= " opacity: 0.4; position: absolute; width: 100%; height: 100vh; object-fit: cover; z-index: -1;">
+        <source src="../static/images/indexBanner.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Dark Overlay for Opacity Effect -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.3); z-index: -1;"></div>
+
+    <section class="index-hero" style="position: relative; z-index: 1; text-align: center; color: white;">
         <h1>AI-Powered Deepfake Detection</h1>
         <p>Detect fake images and videos instantly with cutting-edge AI.</p>
         
-        <!-- HTML !-->
-<a href="/deepfake-checker" role="button" class="btn button-30 pt-2 px-5">Check Now</a>
-
-
+        <a href="/deepfake-checker" role="button" class="btn button-30 pt-2 px-5 my-5">Check Now</a>
     </section>
 </div>
+
+
 
 
 <!-- 🔍 How It Works -->
@@ -106,4 +114,11 @@
 
 </section>
 
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("bg-video").playbackRate = 0.5; // Slow down the video
+    });
+</script>
 {% endblock %}

@@ -39,6 +39,13 @@ body {
     background: linear-gradient(45deg, #F4F3EE 40%, #e6f7ff 100%);
     margin-bottom: 4vw;
 }
+.index-hero {
+    text-align: center;
+    padding: 10vw 0;
+    margin: 0 0;
+    margin-bottom: 4vw;
+    
+}
 
 .about-hero h1 {
     font-size: 3.2vw;
@@ -50,6 +57,7 @@ body {
     font-size: 1.4vw;
     color: #2991c5;
     font-weight: 600;
+
 }
 
 .about-section {
