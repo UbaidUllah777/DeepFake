@@ -44,6 +44,7 @@ body {
 .about-text h2 {
     font-size: 2rem;
     font-weight: bold;
+    color: var(--primary);
 }
 
 .about-text p {
@@ -52,7 +53,6 @@ body {
 }
 
 .about-text a {
-    color: #007bff;
     text-decoration: none;
     font-weight: bold;
 }
