@@ -78,18 +78,31 @@ section {
 .step {
     background: var(--white);
     box-shadow: 0 4px 6px var(--card-shadow);
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
-    width: 200px;
+    width: 300px;
     text-align: center;
+    flex-direction: row !important;
 }
 
 .step span {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.step h3 {
     font-size: 2rem;
     font-weight: bold;
     color: var(--primary);
     display: block;
     margin-bottom: 10px;
+}
+.stepIcon{
+    width: 5vw;
+    margin-bottom: 1vw;
 }
 
 .why-choose-us .feature-cards {
