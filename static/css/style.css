@@ -555,3 +555,11 @@ p{
     box-shadow: #D6D6E7 0 3px 7px inset !important;
     transform: translateY(2px);
   }
+
+
+  .footeraddress{
+    font-size: 1.05rem !important;
+    color: #F4F3EE;
+    opacity: 1 !important;
+    cursor: default;
+  }

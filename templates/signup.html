@@ -10,18 +10,24 @@
         <div style="font-size: 2vw; font-weight: 700; " class="">Sign Up</div>
         <div class="header-line"></div>
 
-        <div id="error-log" style="font-size: 1vw; margin-top: 1vw; color: #BF6CCF;" class="hidden">hello from the
-            Rvel</div>
+ 
         <!-- form -->
         <div style="margin-top: 2vw;">
             <div style="display: flex; flex-direction: column;">
-                <div style="font-size: 1.2vw; margin-bottom: 0.5vw;">Username*</div>
-                <input type="text" class="auth-input" placeholder="Full Name" id="username">
+                <div style="font-size: 1.2vw; margin-bottom: 0.5vw;">Full Name*</div>
+                <input type="text" class="auth-input" placeholder="Full Name" id="name">
             </div>
             <div style="display: flex; flex-direction: column; margin-top: 1vw;">
                 <div style="font-size: 1.2vw; margin-bottom: 0.5vw;">Email*</div>
                 <input type="email" class="auth-input" placeholder="abc@gmail.com" id="email">
             </div>
+  
+            <div style="display: flex; flex-direction: column; margin-top: 1vw;">
+                <div style="font-size: 1.2vw; margin-bottom: 0.5vw;">Phone*</div>
+                <input type="text" class="auth-input" placeholder="05X-XXX-XXXX" id="phone" maxlength="12" oninput="formatDubaiMobileNumber(this)">
+                <small id="phone-error" style="color: red; display: none;">Number must start with 05 , SO it matches (05X-XXX-XXXX)</small>
+            </div>
+
             <div style="display: flex; flex-direction: column; margin-top: 1vw;">
                 <div style="font-size: 1.2vw; margin-bottom: 0.5vw;">Password*</div>
                 <input type="password" class="auth-input" placeholder="********" id="password">
@@ -38,4 +44,24 @@
     </div>
 
 </div>
+
+
+
+<script>
+function formatDubaiMobileNumber(input) {
+    let value = input.value.replace(/\D/g, ''); 
+    let errorMessage = document.getElementById("phone-error");
+
+    if (value.startsWith("05")) {
+        errorMessage.style.display = "none"; 
+        if (value.length > 2) {
+            value = value.replace(/(\d{3})(\d{3})(\d{1,4})/, '$1-$2-$3');
+        }
+    } else {
+        errorMessage.style.display = "block"; 
+    }
+
+    input.value = value;
+}
+</script>
 {% endblock %}
