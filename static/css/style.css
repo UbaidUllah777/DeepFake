@@ -96,6 +96,9 @@ p{
 .mission-card:hover {
     transform: translateY(-0.5vw);
 }
+.mission-card h3{
+    color:#1b7aaa;
+}
 
 .tech-grid {
     display: grid;
@@ -121,7 +124,13 @@ p{
     padding: 2vw;
     background: #fff;
 }
-
+.team-card h3{
+    color: #2da7e4;
+}
+.team-card span{
+    color:#1C385D;
+    font-size: 0.8rem;
+}
 .team-card img {
     width: 12vw;
     height: 12vw;
@@ -129,6 +138,13 @@ p{
     object-fit: cover;
     margin-bottom: 1.5vw;
 }
+.accordion-header button{
+    font-weight: bold;
+    color: #2da7e4;
+    font-size: 1.1rem;
+}
+
+
 
 .faq-container {
     max-width: 800px;
@@ -267,6 +283,7 @@ p{
     opacity: 100%;
 
 }
+
 
 .svg-icons {
     transition: all 0.2s linear;
