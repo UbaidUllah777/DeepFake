@@ -41,14 +41,14 @@ body {
     max-width: 500px;
 }
 
-.about-text h2 {
-    font-size: 2rem;
+.about-text strong {
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary);
 }
 
 .about-text p {
-    font-size: 1rem;
+    font-size: 1.13rem;
     color: #333;
 }
 
@@ -243,6 +243,10 @@ section {
     box-shadow: 0 4px 6px var(--card-shadow);
     max-width: 600px;
     color: #f8f9fa;
+   
+    transform: scale(1.05); 
+    transition: transform 0.2s ease-in-out; 
+
 
 }
 
