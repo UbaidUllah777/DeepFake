@@ -9,7 +9,7 @@ def index():
 @app.route("/deepfake-checker", methods=["GET", "POST"])
 def deepfake_checker():
     if request.method == "POST":
-        # File upload handling will be implemented here
+        # i will implement the file upload handling and check for deepfakes   here
         pass
     return render_template("deepfake_checker.html")
 

@@ -183,7 +183,6 @@ section {
     text-align: center;
 }
 
-/* 📊 Statistics Section */
 .statistics {
     background: var(--primary);
     color: white;
@@ -200,7 +199,6 @@ section {
     font-size: 2rem;
 }
 
-/* 🎥 Real vs. Fake Gallery */
 .gallery .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -214,13 +212,11 @@ section {
     box-shadow: 0 4px 6px var(--card-shadow);
 }
 
-/* 🔬 AI Technology */
 .ai-tech {
     background: var(--secondary);
     padding: 50px 20px;
 }
 
-/* 💡 Deepfake Tips */
 .tips ul {
     list-style: none;
     padding: 0;
@@ -250,7 +246,6 @@ section {
 
 }
 
-/* 📰 News Section */
 .news {
     background: var(--white);
     box-shadow: 0 4px 6px var(--card-shadow);
@@ -259,7 +254,6 @@ section {
     margin: 20px;
 }
 
-/* 🎯 Testimonials */
 .testimonials .testimonial {
     background: var(--white);
     padding: 15px;
@@ -270,7 +264,6 @@ section {
     font-style: italic;
 }
 
-/* 📞 Contact */
 .contact {
     background: var(--bg);
     padding: 50px 20px;
@@ -285,7 +278,6 @@ section {
     background: var(--primary);
 }
 
-/* 🚀 CTA Section */
 .cta {
     background: var(--primary);
     color: white;
@@ -307,7 +299,6 @@ section {
     color: white;
 }
 
-/* 📱 Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
